@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <title>Tu Opinión - Lonchería Ceballos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lonchería Ceballos</h1>
+        <p>La magia del sabor</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Nuestra Historia</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="opinion.html">Tu Opinión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>¡Nos encantaría saber tu opinión!</h2>
+        <p>Tus comentarios nos ayudan a mejorar y a seguir ofreciendo la magia del sabor.</p>
+
+        <form action="#" method="post">
+            <label for="nombre">Tu Nombre (Opcional):</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <fieldset>
+                <legend>Califica el sabor de la comida (5 es excelente):</legend>
+                <input type="radio" id="sabor1" name="sabor" value="1"><label for="sabor1">1</label>
+                <input type="radio" id="sabor2" name="sabor" value="2"><label for="sabor2">2</label>
+                <input type="radio" id="sabor3" name="sabor" value="3"><label for="sabor3">3</label>
+                <input type="radio" id="sabor4" name="sabor" value="4"><label for="sabor4">4</label>
+                <input type="radio" id="sabor5" name="sabor" value="5"><label for="sabor5">5</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Califica la atención al cliente (5 es excelente):</legend>
+                <input type="radio" id="atencion1" name="atencion" value="1"><label for="atencion1">1</label>
+                <input type="radio" id="atencion2" name="atencion" value="2"><label for="atencion2">2</label>
+                <input type="radio" id="atencion3" name="atencion" value="3"><label for="atencion3">3</label>
+                <input type="radio" id="atencion4" name="atencion" value="4"><label for="atencion4">4</label>
+                <input type="radio" id="atencion5" name="atencion" value="5"><label for="atencion5">5</label>
+            </fieldset>
+
+            <label for="platillo-favorito">¿Cuál fue tu platillo favorito?</label>
+            <select id="platillo-favorito" name="platillo_favorito">
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="chilaquiles">Chilaquiles Tradicionales</option>
+                <option value="torta">Torta de Pierna Adobada</option>
+                <option value="huevos">Huevos al Gusto</option>
+                <option value="jugo">Jugo Energético</option>
+                <option value="chocomil">Chocomil Especial</option>
+                <option value="otro">Otro</option>
+            </select>
+            <label for="comentarios">Tus comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+
+            <button type="submit">Enviar Opinión</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lonchería Ceballos. Todos los derechos reservados.</p>
+        <p>Colima, México.</p>
+    </footer>
+
+</body>
+</html>
