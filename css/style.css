@@ -88,7 +88,7 @@ th, td {
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
-th {
+thead th {
     background-color: #d4a373; /* Le da un color de fondo al encabezado para distinguirlo */
     color: black; /* Cambia el color del texto del encabezado a blanco */
 }
