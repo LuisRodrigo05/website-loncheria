@@ -138,11 +138,27 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    margin-bottom: 20px; /* Aumenta el espacio debajo de cada campo */
-    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    
+    /* --- CAMBIO PARA SILKTIDE --- */
+    /* Usamos un gris oscuro (#555) en lugar del claro (#ccc) */
+    /* Y 2px de grosor para que se vea bien definido */
+    border: 2px solid #555; 
+    
     border-radius: 4px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box;
     resize: none;
+    background-color: #ffffff; /* Aseguramos fondo blanco */
+}
+
+/* AGREGA ESTO TAMBIÉN (Opcional pero recomendado) */
+/* Ayuda a que se note mucho más cuando seleccionas la caja */
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #000000; /* Se pone negro total al escribir */
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Sombra suave */
 }
 
 /* Agrupación de botones de radio (Sabor, Atención) */
