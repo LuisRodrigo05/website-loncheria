@@ -9,46 +9,79 @@
 <body>
 
     <header>
+    <img src="images/logo.jpg" alt="Logotipo oficial" width="80">
+    
+    <div class="header-text">
         <h1>Lonchería Ceballos</h1>
         <p>La magia del sabor</p>
-    </header>
+    </div>
+</header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Nuestra Historia</a></li>
+            <li><a href="index.html" aria-current="page">Nuestra Historia</a></li>
             <li><a href="menu.html">Menú</a></li>
             <li><a href="opinion.html">Tu Opinión</a></li>
         </ul>
     </nav>
 
     <main>
-    <h2>Una tradición familiar desde 1994</h2>
-    <p>
-        La Lonchería Ceballos es un negocio familiar que ha estado presente desde hace varias décadas. Comenzó en 1994, cuando la familia decidió buscar una fuente de ingresos estable y compró el local. Lo que antes era un pequeño puesto de chocomiles y tortas, se transformó al añadir más opciones como chilaquiles y jugos frescos.
-    </p>
-    
-    <img src="images/chilaquiles.jpg" alt="Un plato plano con chilaquiles rojos, cubiertos generosamente con queso rallado, crema y cebolla.">
-    
-    <p>
-        Hoy, la tradición continúa con una de las empleadas con más de 20 años de experiencia, quien ahora dirige el negocio junto a su familia, manteniendo la calidad y el sabor que nos caracteriza.
-    </p>
+        <h2>Una tradición familiar desde 1994</h2>
+        
+        <p>
+            La Lonchería Ceballos es un negocio familiar que ha estado presente desde hace varias décadas. Comenzó en 1994, cuando la familia decidió buscar una fuente de ingresos estable y compró el local. Lo que antes era un pequeño puesto de chocomiles y tortas, se transformó al añadir más opciones como chilaquiles y jugos frescos.
+        </p>
 
-    <img src="images/licuado.jpg" alt="Un vaso de vidrio alto servido con un licuado espumoso de color rosa, probablemente de fresa.">
+        <figure class="imagen-destacada">
+            <img src="images/fachada.jpg" alt="Fachada exterior de la Lonchería Ceballos, mostrando la entrada principal y el letrero del negocio.">
+        </figure>
+        
+        <p>
+            Hoy, la tradición continúa con una de las empleadas con más de 20 años de experiencia, quien ahora dirige el negocio junto a su familia, manteniendo la calidad y el sabor que nos caracteriza.
+        </p>
 
-    <h3>Síguenos en nuestras redes</h3>
-    <p>
-        Forma parte de nuestra comunidad.
-    </p>
-    <ul>
-        <li><a href="https://www.facebook.com/profile.php?id=61566674166598&locale=es_LA">Visita nuestro Facebook</a></li>
-        <li><a href="https://www.instagram.com/loncheria_ceballos?igsh=bDljYnZ6OGl1aXl2&fbclid=IwY2xjawNWQapleHRuA2FlbQIxMABicmlkETE1bE5tY05xUGNPY1RWeXlJAR7e1ToVZRxVFN_P43nZz7Aj7lan_Ifx3Jaof1gfzXoowl2307bi2s5A3Qoftw_aem_iD-TKvdLZjaR5Fdc_ql9mg">Visita nuestro Instagram</a></li>
-    </ul>
-</main>
+        <section class="video-section" aria-label="Video promocional">
+            <h3>Conoce nuestra magia</h3>
+            
+            <video id="promoVideo" controls width="100%" poster="images/fachada.jpg">
+                <source src="images/video.mp4" type="video/mp4">
+                
+                <track 
+                    kind="captions" 
+                    label="Español" 
+                    srclang="es" 
+                    src="images/subtitulos.vtt" 
+                >
+                Tu navegador no soporta videos HTML5.
+            </video>
+
+            <div class="video-controls">
+                <button id="btnToggleAD" class="btn-accesibilidad" aria-pressed="false">
+                    Activar Audio Descripción (AD)
+                </button>
+                <p class="ad-info">
+                    <small>Narra lo que sucede en pantalla para personas con discapacidad visual.</small>
+                </p>
+            </div>
+        </section>
+
+        
+
+        <h3>Síguenos en nuestras redes</h3>
+        <p>
+            Forma parte de nuestra comunidad.
+        </p>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=61566674166598&locale=es_LA">Visita nuestro Facebook</a></li>
+            <li><a href="https://www.instagram.com/loncheria_ceballos...">Visita nuestro Instagram</a></li>
+        </ul>
+    </main>
 
     <footer>
         <p>&copy; 2025 Lonchería Ceballos. Todos los derechos reservados.</p>
         <p>Colima, México.</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

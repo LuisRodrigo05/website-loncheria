@@ -13,11 +13,29 @@ header {
     background-color: #d4a373;
     color: #000;
     padding: 1rem 0;
-    text-align: center;
+    
+    /* Activa el modo flexible */
+    display: flex;
+    justify-content: center; /* Centra todo el grupo en la pantalla */
+    align-items: center;     /* Alinea verticalmente al centro */
+    gap: 20px;               /* Espacio entre el logo y las letras */
+}
+
+/* Esto es nuevo: Alineamos el texto a la izquierda para que se vea ordenado junto al logo */
+.header-text {
+    text-align: left;
 }
 
 header h1 {
     margin: 0;
+    font-size: 1.8rem; /* Un poco más grande para destacar */
+    line-height: 1.2;  /* Para que no esté muy separado del eslogan */
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.9; /* Un toque estético sutil */
 }
 
 /* Menú de Navegación */
@@ -165,4 +183,63 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #b38b6d; /* Un color un poco más oscuro al pasar el ratón */
+}
+
+/* =========================================
+   NUEVO: Estilos para Video y Accesibilidad
+   ========================================= */
+
+.video-section {
+    margin: 2rem 0; /* Espacio arriba y abajo */
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave igual a tu formulario */
+    text-align: center;
+}
+
+.video-controls {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-accesibilidad {
+    background-color: #333; /* Oscuro para contraste */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre icono y texto */
+    transition: background 0.3s;
+}
+
+.btn-accesibilidad:hover {
+    background-color: #555;
+}
+
+/* Cuando el modo AD está activo, cambiamos el color */
+.btn-accesibilidad.activo {
+    background-color: #d4a373; /* Usamos el color de tu marca */
+    color: black;
+    border: 1px solid #333;
+}
+
+.ad-info {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Excepción para la imagen de la fachada */
+.imagen-destacada img {
+    width: 80%; /* Hacemos que la fachada sea más grande */
+    max-width: 700px;
 }
